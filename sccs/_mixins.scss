@@ -1,0 +1,21 @@
+@mixin centriranje {
+  width: 100%;
+  max-width: 1180px;
+  margin-left: auto;
+  margin-right: auto;
+}
+div {
+  @include centriranje;
+  border: 1px solid $primarna-boja;
+}
+
+@mixin centriranje($max-width, $margin-left, $margin-right) {
+  width: 100%;
+  max-width: $max-width;
+  margin-left: $margin-left;
+  margin-right: $margin-right;
+}
+ul {
+  @include centriranje(980px, 200px, auto);
+  border-radius: 20%;
+}

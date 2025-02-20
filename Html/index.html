@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="az" />
+    <meta name="description" content="Ponavnje cijelog html-a za ispit" />
+    <title>Ponavnje cijelog html-a za ispit</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Moja stranica za ponavljanje</h1>
+
+      <img
+        src="slike/f2ce3b8e-d941-4f6b-809c-836bd3b7d8de.jpeg"
+        alt="picture of dog and its owner"
+        width="400px"
+        height="350px"
+      />
+      <p>moja stranica za ponavljanje za ispit</p>
+      <nav>
+        <ul>
+          <li><a href="#tko"> tko</a></li>
+          <li><a href="#drugi naslov"> drugi naslov</a></li>
+          <li><a href="#footer"> footer </a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1>Prvi naslov</h1>
+      <p>hahahhahah</p>
+      <audio
+        src="C:\Users\arnre\Music\Nova mapa\beautiful, but it is too early audio.mp3"
+        controls
+      ></audio>
+      <section id="drugi naslov">
+        <h2>drugi naslov</h2>
+        <p>hahahhahah</p>
+        <video
+          src="C:\Users\arnre\Videos\vježbanje s edom\vježbanje s edom 1.mkv"
+          controls
+          width="450px"
+          height="300px"
+        ></video>
+      </section>
+      <div class="flex-container">
+        <div class="flex-item">1</div>
+        <div class="flex-item">2</div>
+        <div class="flex-item">3</div>
+        <div class="flex-item">4</div>
+      </div>
+      <aside>
+        <h3>treci</h3>
+        <p>hahahhahah</p>
+        <ul>
+          <li>ananas</li>
+          <li>jabuka</li>
+          <li>kruška</li>
+        </ul>
+      </aside>
+      <aside>
+        <ol>
+          <li>zlato</li>
+          <li>srebro</li>
+          <li>bronza</li>
+        </ol>
+      </aside>
+      <aside>
+        <dl>
+          <dt>jabuka</dt>
+          <dd>zlatne boje</dd>
+          <dt>kruška</dt>
+          <dd>domaća, jutros ubrana</dd>
+          <dt>banana</dt>
+          <dd>naravno uvozna, još zelena</dd>
+        </dl>
+      </aside>
+      <article>
+        <h4>četvrti</h4>
+        <p>hahahhahah</p>
+        <table border="1">
+          <caption>
+            moja tablica
+          </caption>
+          <tr>
+            <th>broj</th>
+            <th>ime</th>
+            <th>prezime</th>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>ana</td>
+            <td>beljo</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td colspan="2">branimir zvonko klanjac</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>mutimir</td>
+            <td colspan="3">šeferović kozina trp</td>
+          </tr>
+        </table>
+      </article>
+      <article>
+        <h5>peti</h5>
+        <p>hahahhahah</p>
+        <form action="" method="get">
+          <p>
+            <label for="email">email adresa</label> <br />
+            <input id="email" name="email" type="email" required />
+          </p>
+
+          <p>
+            <label for="password"> lozinka </label> <br />
+            <input id="password" type="password" required minlength="8" />
+          </p>
+          <p>
+            odabir državljanstvo <label for="hrvatsko">hrvatsko</label> <br />
+            <input id="hrvatsko" type="checkbox" />
+            <br />
+            <label for="bosansko">bosansko</label> <br />
+            <input id="bosansko" type="checkbox" />
+            <br />
+            <label for="srpsko">srpsko</label> <br />
+
+            <input id="srpsko" type="checkbox" />
+            <br />
+            <label for="američko">američko</label>
+            <input id="američko" type="checkbox" />
+            <br />
+          </p>
+          <p>
+            odabir spola
+            <br />
+            <label for="m"> m</label> <br />
+            <input id="m" type="radio" name="spol" value="m" />
+            <br />
+            <label for="f"> f</label> <br />
+            <input id="f" type="radio" name="spol" value="f" />
+          </p>
+          <p>
+            <label for="file"> priložite dokument</label> <br />
+            <input id="file" type="file" />
+          </p>
+
+          <p>
+            <label for="text"> dodatni kometar</label> <br />
+            <input id="text" type="text" />
+          </p>
+          <br />
+          <label for="kometar"> upošite svoj kometar</label>
+          <textarea name="kometar" id="kometar"> </textarea>
+          <br />
+
+          <select name="zamjenice" id="tko" multiple>
+            <option value="ja">ja</option>
+            <option value="ti">ti</option>
+            <option value="oni">oni</option>
+          </select>
+          <p>
+            <label for="reset"> reset obrasca</label> <br />
+            <input id="reset" type="reset" />
+          </p>
+          <p>
+            <label for="submit">podnesi podatke</label> <br />
+            <input id="submit" type="submit" />
+          </p>
+        </form>
+      </article>
+      <section>
+        <h6>šesti</h6>
+        <p>hahahhahah</p>
+      </section>
+    </main>
+    <footer id="footer">
+      <h1>moja web stranica</h1>
+      <div class="ana">Animacija</div>
+      <div class="ana1">Animacija1</div>
+    </footer>
+  </body>
+</html>

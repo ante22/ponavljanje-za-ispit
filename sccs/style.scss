@@ -1,0 +1,26 @@
+$primarna-boja: #4682;
+$vrijednost: 50%;
+$manja: 20%;
+@import "trying";
+@import "mixins";
+@import "extend";
+@import "interpolacija";
+@import "ifiostali";
+div {
+  color: $primarna-boja;
+  width: $vrijednost;
+  padding: $manja;
+  ul {
+    list-style: none;
+
+    li {
+      display: inline;
+      a {
+        color: yellow;
+        &:hover {
+          color: $boja2;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,226 @@
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: beige;
+  text-align: center;
+  text-decoration: wavy;
+  font-style: normal;
+  line-height: normal;
+  text-transform: none;
+  text-shadow: 6px 3px 5px #7e2a2a;
+  background-color: black;
+  background-image: url("slike/f2ce3b8e-d941-4f6b-809c-836bd3b7d8de.jpeg");
+  background-repeat: repeat-x;
+}
+header {
+  background-color: rgb(49, 47, 47);
+}
+a:link {
+  color: darkslateblue;
+  text-decoration: underline;
+}
+a:visited {
+  color: darkred;
+  text-decoration: line-through;
+}
+a:hover {
+  color: blueviolet;
+  text-decoration: double;
+}
+a:focus {
+  color: forestgreen;
+  text-decoration: dashed;
+}
+a:active {
+  color: gold;
+  text-decoration: overline;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  background-color: cadetblue;
+}
+h1 {
+  color: aliceblue;
+}
+h2 {
+  color: antiquewhite;
+}
+h3 {
+  color: bisque;
+}
+h4 {
+  color: azure;
+}
+h5 {
+  color: blueviolet;
+}
+h6 {
+  color: aqua;
+}
+
+img {
+  position: relative;
+  top: -20px;
+  right: -260px;
+  width: 40%;
+}
+p {
+}
+nav {
+  transform: translate(150px, 100px) rotate(25deg) scale(1.2, 3)
+    skew(20deg, 15deg);
+}
+ul {
+}
+li {
+}
+ol {
+}
+dl {
+}
+dd {
+}
+dt {
+}
+main {
+}
+audio {
+}
+video {
+  position: absolute;
+  top: 20px;
+  left: 100px;
+  width: 40%;
+}
+section {
+}
+aside {
+  display: flex;
+  justify-content: right;
+  align-items: flex-start;
+  flex-direction: column;
+  border: red 2px double;
+}
+article {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+table {
+  border-collapse: collapse;
+}
+tr {
+}
+th {
+}
+td {
+}
+form {
+}
+input {
+}
+textarea {
+}
+select {
+}
+footer {
+}
+div {
+  width: 250px;
+  height: 200px;
+  border: medium dashed black;
+  padding: 4px;
+  margin: 10px;
+  background-color: aliceblue;
+  border-radius: 50%;
+  box-sizing: content-box;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+.flex-item:nth-child(4) {
+  transition: background-color;
+  transition-duration: 1s;
+  transition-delay: 0.5s;
+  transition-timing-function: ease;
+}
+.flex-item:nth-child(4):hover {
+  background-color: red;
+}
+.flex-item:nth-child(3) {
+  order: -1;
+  color: red;
+  flex-shrink: 2;
+  transition: background-color 2s linear 0.5;
+}
+.flex-item:nth-child(3):hover {
+  background-color: aquamarine;
+}
+.flex-item:nth-child(2) {
+  order: -1;
+  color: red;
+  flex-grow: 2;
+}
+.flex-item:nth-child(1) {
+  flex-basis: 30%;
+  align-self: center;
+}
+@keyframes ana {
+  0% {
+    background-color: black;
+  }
+  25% {
+    background-color: blue;
+  }
+  50% {
+    background-color: yellow;
+  }
+  75% {
+    background-color: rebeccapurple;
+  }
+  100% {
+    background-color: chocolate;
+  }
+}
+.ana {
+  animation-name: ana;
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0.3s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+  animation-fill-mode: none;
+  animation-play-state: running;
+}
+.ana1 {
+  animation: ana 7s ease-in-out 0.4s infinite;
+}
+@media screen and (max-width: 1200px) {
+  .flex-container {
+    width: 33%;
+  }
+}
+@media screen and (max-width: 990px) {
+  .flex-container {
+    width: 43%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .flex-container {
+    width: 53%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .flex-container {
+    width: 63%;
+  }
+}

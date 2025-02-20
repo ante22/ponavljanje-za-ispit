@@ -1,0 +1,27 @@
+.btn {
+  border: 2px solid #333;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.btn-red {
+  @extend .btn;
+  background-color: red;
+}
+.btn-green {
+  @extend .btn;
+  background-color: green;
+}
+%btn2 {
+  border: 2px solid #333;
+  border-radius: 20px;
+  text-align: center;
+}
+.btn2-red {
+  @extend %btn2;
+  background-color: rgb(155, 98, 98);
+}
+.btn2-green {
+  @extend %btn2;
+  background-color: rgb(52, 85, 52);
+}

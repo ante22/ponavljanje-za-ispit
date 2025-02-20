@@ -1,0 +1,5 @@
+$ime-klase: container;
+$ime-svojstva: max-width;
+.#{$ime-klase} {
+  #{$ime-svojstva}: 1080px;
+}

@@ -1,0 +1,35 @@
+$color3: red;
+@if $color3 == gray {
+  .class-1 {
+    background-color: $color3;
+    color: white;
+  }
+} @else {
+  .class-2 {
+    background-color: $color3;
+    color: black;
+  }
+}
+@for $i from 1 through 5 {
+  .container-#{$i} {
+    width: 300px * $i;
+  }
+}
+@for $i from 1 to 5 {
+  .container1-#{$i} {
+    width: 300px * $i;
+  }
+}
+$lista-autora: ana, marija, pero;
+@each $autor in $lista-autora {
+  .slika-#{$autor} {
+    background: url(slike/#{$autor}.jpg);
+  }
+}
+$index: 1;
+@while $index < 5 {
+  .kutija-#{$index} {
+    width: 200px * $index;
+  }
+  $index: $index + 1;
+}
