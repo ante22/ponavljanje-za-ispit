@@ -1,0 +1,69 @@
+body {
+  background-color: aliceblue;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 16px;
+  height: 100vh;
+}
+.flex-container {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  flex-wrap: nowrap;
+  width: 50%;
+  margin: auto;
+}
+form {
+  background-color: grey;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: space-between;
+}
+label:first-of-type {
+  width: 60%;
+  order: -1;
+}
+label:last-of-type {
+  width: 40%;
+  order: -1;
+}
+input {
+  width: 60%;
+  background-color: grey;
+  color: white;
+  border: 1px solid black;
+  padding: 0;
+  margin: 0;
+}
+input:nth-of-type(2) {
+  width: 16%;
+}
+input:nth-of-type(3) {
+  background-color: black;
+  color: white;
+  width: 20%;
+}
+@media screen and (max-width: 767px) {
+  .flex-container {
+    width: 50%;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  label:first-of-type {
+    order: -1;
+  }
+  input:nth-of-type(1) {
+    order: -1;
+    width: 99%;
+  }
+  input:nth-of-type(2) {
+    width: 99%;
+  }
+  input:nth-of-type(3) {
+    width: 99%;
+  }
+}
