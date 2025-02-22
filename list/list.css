@@ -1,25 +1,6 @@
-body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  background-color: white;
-  margin: 0;
-}
-.leaf {
-  width: 100px;
-  height: 100px;
-  border-radius: 1% 50%;
-
-  position: relative;
-}
-.leaf::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 50%;
-  width: 50%;
-  height: 100%;
+div {
+  width: 120px;
+  height: 180px;
   background-color: green;
-  border-radius: 0 50%;
+  border-radius: 80% 20% 80% 20% / 50% 50% 50% 50%;
 }
