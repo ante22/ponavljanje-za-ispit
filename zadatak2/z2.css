@@ -46,7 +46,7 @@ input:nth-of-type(3) {
 }
 @media screen and (max-width: 767px) {
   .flex-container {
-    width: 50%;
+    width: 100%;
   }
   form {
     display: flex;
