@@ -1,0 +1,102 @@
+HTML
+1.
+Unutar <head> oznake treba dodati:
+
+<title>My Portfolio</title>
+2.
+Koristimo <nav> element za označavanje glavne navigacije.
+Označavanje audio zapisa s kontrolama:
+3.
+<audio controls>
+  <source src="audio-file.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+4. 
+HTML (HyperText Markup Language) je jezik za označavanje koji se koristi za izradu i strukturiranje web-stranica. neprogramski jezik,
+
+6.
+Najprikladniji element za sadržaj koji nije povezan s okruženjem je <aside>.
+7.
+Najprikladniji element za označavanje uvodnog sadržaja je <header>.
+8.
+Netočno – HTML može sadržavati više <article> elemenata.
+9.
+HTML omogućuje pristupačne web stranice korištenjem semantičkih oznaka (<header>, <main>, <section>, <nav>), alt atributa u slikama te ARIA atributa.
+10.
+Linijska (inline) stilska pravila primjenjujemo pomoću style atributa, npr.:
+
+<p style="color: red;">Ovo je crveni tekst.</p>
+
+CSS
+11.
+Selektor koji odabire <a> element kada je miš iznad njega:
+
+a:hover {
+  color: red;
+}
+12.
+Iskorištavanje CSS3 varijable:
+
+color: var(--color-primary);
+
+
+15.Ispravan način pozivanja SCSS funkcije lighten:
+
+color: lighten($color, 20%);
+16.Ispravan način pozivanja SCSS mixina square:
+
+@include square(100px);
+
+JavaScript
+17.Minifikacija je proces uklanjanja nepotrebnih znakova (razmaci, novi redovi) iz koda radi smanjenja veličine i poboljšanja performansi.
+18.Ne koristi se za petlju –❌ if nije petlja.
+✅ for, while, do...while, for...in, for...of su petlje jer ponavljaju kod.
+19.Neispravan identifikator varijable – Mora započeti slovom, _ ili $
+ Ne smije biti rezervirana riječ (let, var, if, itd.)
+ Osjetljivo je na velika i mala slova
+20.Funkcija max:
+
+function max(a, b) {
+  return a >= b ? a : b;
+}
+21.Razlika između let i const:
+let omogućuje ponovnu dodjelu vrijednosti.
+const ne dopušta promjenu vrijednosti nakon inicijalizacije.
+
+23.JavaScript je objektno-orijentirani jezik. Y
+24.JavaScript podržava funkcijski stil programiranja. Y
+25.ECMAScript je standard koji definira pravila i značajke JavaScript jezika.
+26.HTML DOM ne definira –točne su : 
+Strukturiranje HTML dokumenta kao stabla čvorova
+Pristup HTML elementima putem JavaScript-a
+Manipulaciju sadržajem HTML elemenata
+Promjenu CSS stilova
+Dodavanje i uklanjanje elemenata
+Reagiranje na događaje (npr. klikove, unose u polja itd.).
+27.Neispravna metoda nad document objektom – točne su getElementById(), getElementsByClassName(), getElementsByTagName(), querySelector(), querySelectorAll(), createElement(), document.write(), document.body
+28.Postavljanje godine u copyright element pomoću JavaScript-a:
+
+document.getElementById("copyright-year").textContent = new Date().getFullYear();
+Git
+29. Git je distribuirani sustav za verzioniranje koda.
+ Koristi se za praćenje promjena u kodu, omogućavanje suradnje među više programera i olakšavanje povratka na prethodne verzije koda
+30. Git repozitorij se inicijalizira naredbom:
+
+git init
+31.Repozitorij je spremište koje sadrži verzije koda i promjene kroz vrijeme.
+Repozitorij može biti:
+Lokalni i Remote
+32.Instalacija paketa algebra-library s upisom u package.json:
+
+npm install algebra-library --save
+React
+33.Child komponenta ne smije mijenjati props objekt koji je primila.   stoga - N
+34.Koja nije faza React životnog ciklusa? – Ove jesu: Mounting (Montiranje) – Kada se komponenta kreira i dodaje u DOM.
+Updating (Ažuriranje) – Kada se komponenta ažurira zbog promjena u state ili props.
+Unmounting (Demontiranje) – Kada se komponenta uklanja iz DOM-a
+35.  Potrebno je u komponentu <User> postaviti prop "firstName". Odaberite ispravnu liniju
+koda.
+Ispravan način postavljanja firstName u <User> komponentu:
+jsx
+
+<User firstName="John" />
